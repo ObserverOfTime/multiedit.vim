@@ -1,0 +1,52 @@
+*multiedit.txt*  Like |:tabedit| but with multiple arguments
+
+Version: 0.0.1
+Author: ObserverOfTime <chronobserver@disroot.org>
+License: Poetic Licence
+
+==============================================================================
+CONTENTS                                                  *multiedit-contents*
+
+    1. Introduction                                   |multiedit-introduction|
+    2. Configuration                                 |multiedit-configuration|
+    3. Commands                                           |multiedit-commands|
+
+==============================================================================
+INTRODUCTION                                          *multiedit-introduction*
+
+I created this plugin out of frustration that the |:tabedit| command
+can only receive one argument and has no support for |file-pattern|.
+This plugin allows you to open multiple files with one command and
+supports file patterns and Vim's file |command-completion|.
+
+==============================================================================
+CONFIGURATION                                        *multiedit-configuration*
+
+g:multiedit_command
+
+    Type: |String|
+    Default: `Multiedit`
+
+You can define a custom name for the command. For example: >
+
+    let g:multiedit_command = 'M'
+<
+
+g:multiedit_glob
+
+    Type: |Number|
+    Default: `1`
+
+Multiedit will use |glob()| to parse given arguments.
+Set this variable to 0 to disable this behaviour.
+
+==============================================================================
+COMMANDS                                                  *multiedit-commands*
+
+:Multiedit[!] [file] ...
+
+Edit each given [file] in a new tab. Without arguments, open an empty tab.
+Will report |glob()| errors, use with [!] to disable them.
+
+
+vim:tw=78:ts=8:ft=help:norl:

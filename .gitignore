@@ -1,0 +1,12 @@
+[._]s[a-rt-v][a-z]
+[._]*.s[a-v][a-z]
+[._]ss[a-gi-z]
+[._]*.sw[a-p]
+[._]sw[a-p]
+[._]*.un~
+*~
+
+Session.vim
+.netrwhist
+.lvimrc
+tags

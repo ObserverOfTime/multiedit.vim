@@ -1,0 +1,8 @@
+{
+  "name": "multiedit",
+  "version": "0.0.1",
+  "description": "Like :tabedit but with multiple arguments",
+  "author": "ObserverOfTime <chronobserver@disroot.org>",
+  "repository": {"type": "git", "url": "https://github.com/ObserverOfTime/multiedit.vim.git"},
+  "dependencies": {}
+}
